@@ -15,6 +15,9 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      primary: '#131313',
+      secondary: '#D3DCE6',
+      tertiary: '#9DA8B6',
 
       black: colors.black,
       white: colors.white,
@@ -83,6 +86,7 @@ module.exports = {
     backgroundColor: (theme) => theme('colors'),
     backgroundImage: {
       none: 'none',
+      'patricia': "url('/src/assets/img/patricia.svg')",
       'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
       'gradient-to-tr': 'linear-gradient(to top right, var(--tw-gradient-stops))',
       'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
@@ -268,7 +272,7 @@ module.exports = {
       base: ['1rem', { lineHeight: '1.5rem' }],
       lg: ['1.125rem', { lineHeight: '1.75rem' }],
       xl: ['1.25rem', { lineHeight: '1.75rem' }],
-      '2xl': ['1.5rem', { lineHeight: '2rem' }],
+      '2xl': ['1.5rem'],
       '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
       '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
       '5xl': ['3rem', { lineHeight: '1' }],
@@ -422,6 +426,7 @@ module.exports = {
       '3/6': '50%',
       '4/6': '66.666667%',
       '5/6': '83.333333%',
+      'card': '19.063rem',
       full: '100%',
       screen: '100vh',
     }),
@@ -784,6 +789,7 @@ module.exports = {
       '9/12': '75%',
       '10/12': '83.333333%',
       '11/12': '91.666667%',
+      'card': '31.188rem',
       full: '100%',
       screen: '100vw',
       min: 'min-content',
