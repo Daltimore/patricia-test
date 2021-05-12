@@ -1,7 +1,7 @@
 <template>
   <section class="flex h-screen justify-center items-center">
     <div
-      class="rounded-2xl bg-primary w-card
+      class="rounded-2xl bg-primary w-card mx-3 md:mx-0
       h-auto md:h-card p-5 md:p-10 relative overflow-hidden
       patricia-bg"
     >
@@ -45,19 +45,22 @@
         </div>
       </div>
       <div class="flex flex-row justify-between items-center align-bottom">
-        <p
-          v-if="!show"
-          class="text-sm md:text-lg text-secondary"
-        >
-          Cardholders name
-        </p>
-        <p
-          v-else
-          class="text-sm md:text-lg text-secondary"
-        >
-          {{cardName}}
-        </p>
-        <div class="flex flex-row justify-between items-center">
+        <div>
+          <p
+            v-if="!show"
+            class="text-sm md:text-lg text-secondary"
+          >
+            Cardholders name
+          </p>
+          <p
+            v-else
+            class="text-sm md:text-lg text-secondary"
+          >
+            {{cardName}}
+          </p>
+        </div>
+        <div class="flex justify-between items-center">
+          <div class="flex flex-row items-center pr-6">
           <div class="flex flex-col">
             <span class="uppercase text-tertiary text-xs">valid</span>
             <span class="uppercase text-tertiary -mt-1.5 text-xs">thru</span>
@@ -80,6 +83,7 @@
           >
             {{cvv}}
           </p>
+        </div>
         </div>
       </div>
     </div>
