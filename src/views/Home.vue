@@ -124,7 +124,7 @@ export default {
 @media (max-width: 375px) {
   .patricia-bg {
     background-size: 100%;
-    background-position: left -2.06rem top -1.76rem;
+    background-position: left -2.06rem top -1.52rem;
   }
 }
 
