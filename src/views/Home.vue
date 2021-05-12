@@ -2,7 +2,7 @@
   <section class="flex h-screen justify-center items-center">
     <div
       class="rounded-2xl bg-primary w-card
-      h-card p-10 relative overflow-hidden
+      h-auto md:h-card p-5 md:p-10 relative overflow-hidden
       patricia-bg"
     >
       <div class="flex justify-between items-center">
@@ -24,36 +24,36 @@
       </div>
       <div>
         <div
-          class="grid grid-cols-4 gap-6 text-secondary
+          class="grid grid-cols-4 gap-16 text-secondary
           align-middle line-card"
           v-if="!show"
         >
-          <p class="text-2xl font-semibold">••••</p>
-          <p class="text-2xl font-semibold">••••</p>
-          <p class="text-2xl font-semibold">••••</p>
-          <p class="text-2xl">{{cardNumber.substr(cardNumber.length - 4)}}</p>
+          <p class="text-lg md:text-2xl font-semibold">••••</p>
+          <p class="text-lg md:text-2xl font-semibold">••••</p>
+          <p class="text-lg md:text-2xl font-semibold">••••</p>
+          <p class="text-lg md:text-2xl">{{cardNumber.substr(cardNumber.length - 4)}}</p>
         </div>
         <div
-          class="grid grid-cols-4 gap-6 text-secondary
+          class="grid grid-cols-4 gap-16 text-secondary
           align-middle line-card"
           v-else
         >
-          <p class="text-2xl">{{cardNumber.substr(0, 4)}}</p>
-          <p class="text-2xl">{{cardNumber.substr(4, 4)}}</p>
-          <p class="text-2xl">{{cardNumber.substr(8, 4)}}</p>
-          <p class="text-2xl">{{cardNumber.substr(cardNumber.length - 4)}}</p>
+          <p class="text-lg md:text-2xl">{{cardNumber.substr(0, 4)}}</p>
+          <p class="text-lg md:text-2xl">{{cardNumber.substr(4, 4)}}</p>
+          <p class="text-lg md:text-2xl">{{cardNumber.substr(8, 4)}}</p>
+          <p class="text-lg md:text-2xl">{{cardNumber.substr(cardNumber.length - 4)}}</p>
         </div>
       </div>
       <div class="flex flex-row justify-between items-center align-bottom">
         <p
           v-if="!show"
-          class="text-lg text-secondary"
+          class="text-sm md:text-lg text-secondary"
         >
-          CardHolders name
+          Cardholders name
         </p>
         <p
           v-else
-          class="text-lg text-secondary"
+          class="text-sm md:text-lg text-secondary"
         >
           {{cardName}}
         </p>
@@ -62,21 +62,21 @@
             <span class="uppercase text-tertiary text-xs">valid</span>
             <span class="uppercase text-tertiary -mt-1.5 text-xs">thru</span>
           </div>
-          <p class="text-secondary text-xl pl-3">10/12</p>
+          <p class="text-secondary text-base md:text-xl pl-3">10/12</p>
         </div>
         <div
           class="flex flex-row justify-between items-center"
         >
-          <span class="uppercase text-tertiary text-xs">cvv</span>
+          <span class="uppercase text-tertiary text-base md:text-xs">cvv</span>
           <p
             v-if="!show"
-            class="text-secondary text-xl pl-3"
+            class="text-secondary text-sm md:text-xl pl-3"
           >
             •••
           </p>
           <p
             v-else
-            class="text-secondary text-xl pl-3"
+            class="text-secondary text-sm md:text-xl pl-3"
           >
             {{cvv}}
           </p>
@@ -115,6 +115,13 @@ export default {
 .line-card {
   line-height: 11.063rem;
   vertical-align: middle;
+}
+
+@media (max-width: 375px) {
+  .patricia-bg {
+    background-size: 100%;
+    background-position: left -2.06rem top -1.76rem;
+  }
 }
 
 </style>
