@@ -28,9 +28,9 @@
           align-middle line-card"
           v-if="!show"
         >
-          <p class="text-lg md:text-2xl font-semibold">••••</p>
-          <p class="text-lg md:text-2xl font-semibold">••••</p>
-          <p class="text-lg md:text-2xl font-semibold">••••</p>
+          <p class="text-lg md:text-2xl font-semibold tracking-widest">••••</p>
+          <p class="text-lg md:text-2xl font-semibold tracking-widest">••••</p>
+          <p class="text-lg md:text-2xl font-semibold tracking-widest">••••</p>
           <p class="text-lg md:text-2xl">{{cardNumber.substr(cardNumber.length - 4)}}</p>
         </div>
         <div
