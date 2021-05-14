@@ -31,17 +31,17 @@
           <p class="text-lg md:text-2xl font-semibold tracking-widest">••••</p>
           <p class="text-lg md:text-2xl font-semibold tracking-widest">••••</p>
           <p class="text-lg md:text-2xl font-semibold tracking-widest">••••</p>
-          <p class="text-lg md:text-2xl">{{cardNumber.substr(cardNumber.length - 4)}}</p>
+          <p class="text-lg md:text-2xl tracking-wider">{{cardNumber.substr(cardNumber.length - 4)}}</p>
         </div>
         <div
           class="grid grid-cols-4 gap-16 text-secondary
           align-middle line-card"
           v-else
         >
-          <p class="text-lg md:text-2xl">{{cardNumber.substr(0, 4)}}</p>
-          <p class="text-lg md:text-2xl">{{cardNumber.substr(4, 4)}}</p>
-          <p class="text-lg md:text-2xl">{{cardNumber.substr(8, 4)}}</p>
-          <p class="text-lg md:text-2xl">{{cardNumber.substr(cardNumber.length - 4)}}</p>
+          <p class="text-lg md:text-2xl tracking-wider">{{cardNumber.substr(0, 4)}}</p>
+          <p class="text-lg md:text-2xl tracking-wider">{{cardNumber.substr(4, 4)}}</p>
+          <p class="text-lg md:text-2xl tracking-wider">{{cardNumber.substr(8, 4)}}</p>
+          <p class="text-lg md:text-2xl tracking-wider">{{cardNumber.substr(cardNumber.length - 4)}}</p>
         </div>
       </div>
       <div class="flex flex-row justify-between items-center align-bottom">
