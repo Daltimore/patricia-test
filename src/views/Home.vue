@@ -73,7 +73,7 @@
           <span class="uppercase text-tertiary text-base md:text-xs">cvv</span>
           <p
             v-if="!show"
-            class="text-secondary text-sm md:text-xl pl-3"
+            class="text-secondary text-sm md:text-xl pl-3 tracking-wider"
           >
             •••
           </p>
